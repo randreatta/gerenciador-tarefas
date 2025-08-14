@@ -1,6 +1,9 @@
 package com.gerenciador.tarefas.controller.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
+
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -8,6 +11,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "usuarios")
+@Data
 public class Usuario implements Serializable {
 
     private static final long serialVersionUID =1L;
